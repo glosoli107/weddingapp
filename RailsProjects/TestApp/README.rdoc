@@ -1,0 +1,66 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+user_name: ENV["GMAIL_USERNAME"],
+password: ENV["GMAIL_PASSWORD"]
+
+<form>
+  Name: <input type="text" name=@name>
+  <br>
+  Number of Seats: <input type="text" name=@numberofseats>
+  <br>
+  <input type="submit" value="Request Seat(s)">
+
+</form>
+
+def create
+  @bus_request = BusRequest.new(bus_request_params)
+
+  respond_to do |format|
+    if @bus_request.save
+      format.html { redirect_to @bus_request, notice: 'Bus request was successfully created.' }
+      format.json { render :show, status: :created, location: @bus_request }
+    else
+      format.html { render :new }
+      format.json { render json: @bus_request.errors, status: :unprocessable_entity }
+    end
+  end
+end
+
+<%= f.submit 'Submit', class: 'bus_confirm', data: { confirm: 'Your bus request will be submitted.' }%>
+
+        format.html { render :new }
+
+
+        body {
+          background: #FFF;
+          margin: 0;
+        }
+        <br>
+        <%= render :partial => 'contact_emails/contact_form' %>

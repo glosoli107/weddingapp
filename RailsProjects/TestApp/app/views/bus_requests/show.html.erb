@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number of seats:</strong>
+  <%= @bus_request.number_of_seats %>
+</p>
+
+<p>
+  <strong>Names:</strong>
+  <%= @bus_request.names %>
+</p>
+
+<%= link_to 'Edit', edit_bus_request_path(@bus_request) %> |
+<%= link_to 'Back', bus_requests_path %>

@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+
+body {
+  margin: 0;
+  background-color: #ffe9ec;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+form {
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  padding: 0 0 0 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.imgl {
+  margin-top: 5px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.imgr {
+  margin-top: 5px;
+  float: right;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+hr {
+    border-width: thick;
+    border-style: solid;
+    color: #DAA520;
+}
+
+@font-face {
+  font-family: 'copperplategothic';
+  src: url('/assets/copperplategothic.TTF');
+}
+
+@font-face {
+    font-family: 'ecuyerdaxregular';
+    src: url('/assets/ecuyer.TTF');
+}
+
+.nav {
+  float: left;
+  padding: 0 0 0 40px;
+  margin-top: 0;
+  font-family: "ecuyerdaxregular";
+  letter-spacing: 2px;
+}
+
+li {
+  float: left; /* makes list horizontal */
+  list-style-type: none;
+  margin: 0 0 0 30px; /* separates 'buttons' */
+}
+
+.menu-link {
+  padding: 10px 15px; /* makes target area bigger */
+  color: #333; /* rgba backup */
+  color: rgba(0,0,0, 1);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(0,0,0, 0.3);
+  -webkit-transition: all 0.75s ease-in-out;
+  -moz-transition: all 0.75s ease-in-out;
+  -o-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+
+.menu-link:hover, .menu-link:focus {
+  color: #DAA520;
+  background: #fff; /* rgba backup */
+  background: #FFE0E3;
+  -webkit-border-radius: 4px; /* safari & chrome */
+  -moz-border-radius: 4px; /* firefox */
+  border-radius: 4px; /* futureproof */
+}
+
+.custom-link {
+  color:i#0080ff;
+}
+
+.article-content {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  max-width: 37em;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 0 0 0 0;
+  line-height: 30px;
+  text-align: justify;
+}
+
+iframe {
+  margin-left: 250px;
+  margin-bottom: 50px;
+}
+
+.field {
+  font-family: "Work Sans", sans-serif;
+  font-size: 30px;
+}
+
+.email_field {
+  margin-top: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 30px;
+}
+
+.notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(135, 216, 211, 0.85);
+}
+
+.alert_wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(135, 216, 211, 0.85);
+}
+
+.notice {
+  padding: 2.5rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.alert {
+  padding: 2.5rem 0;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+
+.content br{
+  line-height: 12px;
+}
+
+.bus_field {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 30px;
+  text-align: left;
+  max-width: 40em;
+  margin-left: 100px;
+}
+
+.bus_field input {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.custom_text_field {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 45px;
+}
+
+.bus_field textarea {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.bus_field label {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.bus_confirm input {
+  font-family: 'copperplategothic';
+  font-size: 26px;
+  line-height: 35px;
+  cursor: pointer;
+  margin-top: 0
+}
+
+.no_underline {
+  text-decoration: none;
+}
