@@ -1,0 +1,29 @@
+<%= form_for(@new_message) do |f| %>
+  <% if @new_message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@new_message.errors.count, "error") %> prohibited this new_message from being saved:</h2>
+
+      <ul>
+      <% @new_message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p class = "custom_text_field">
+    <%= f.label :user_name, "Name:" %>
+    <%= f.text_field :user_name %><br>
+
+
+    <%= f.label :user_email, "Email Address:" %>
+    <%= f.text_field :user_email %><br>
+
+    <%= f.label :user_message, "Message:" %><br>
+    <%= f.text_area :user_message, cols: 40, rows: 6 %>
+    <br>
+    <p2 class = "bus_confirm">
+    <%= f.submit 'Send Message' %>
+    </p2>
+  </p>
+<% end %>

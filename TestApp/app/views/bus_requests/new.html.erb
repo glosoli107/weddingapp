@@ -1,0 +1,69 @@
+<%= stylesheet_link_tag    "contact", media: "screen" %>
+<% if notice %>
+  <div class="notice_wrapper">
+      <p class="notice"><%= notice %></p>
+  </div>
+<% elsif alert %>
+  <div class="alert_wrapper">
+    <p class ="alert"><%= alert %></p>
+  </div>
+<% elsif notice %>
+  <div class="notice_wrapper">
+    <p class="notice"><%= notice %></p>
+  </div>
+<% elsif alert %>
+  <div class="alert_wrapper">
+    <p class="alert"><%= alert %></p>
+  </div>
+<% end %>
+<style>
+@font-face {
+    font-family: 'ecuyerdaxregular';
+    src: url('/assets/ecuyer.TTF')
+     }
+     .content p1 {
+        font-family: 'ecuyerdaxregular';
+        font-size: 80px;
+        color: #DAA520;
+     }
+     h1 {
+       background-color: #FFE0E3
+     }
+</style>
+<h1 class="content", align ="center">
+     <img class= "imgl" src="/assets/ghledited.png">
+     <img class= "imgr" src="/assets/ghredited.png"><br>
+     <p1>Contact</p1>
+     <hr>
+</h1>
+<ul class="nav">
+  <li><a class = "menu-link" href="home">HOME</a></li>
+  <li><a class = "menu-link" href="wedding">WEDDING</a></li>
+  <li><a class = "menu-link" href="hotels">HOTELS</a></li>
+  <li><a class = "menu-link" href="registry">REGISTRY</a></li>
+  <li><a class = "menu-link" href="marryoke">MARRYOKE</a></li>
+  <li><a class = "menu-link" href="contact">CONTACT</a></li>
+</ul>
+<br>
+<div class="article-content">
+<p>
+  <b><u>Buses</u></b><br>
+  Ham Polo is approximately 20 miles from St Nicholas'. We have booked a bus
+  to transport guests from St Nicholas' to Ham. We are limited to 72 seats on the bus
+  and will allocate those seats on a first come first served basis.
+  If you would like to request a seat on the bus, please enter your email, the number
+  of seats you require, as well as your name(s) below:
+</p>
+</div>
+<div class = "bus_field">
+  <%= render 'form' %>
+</div>
+<div class="article-content">
+<p>
+  <b><u>Questions or Comments?</u></b><br>
+  Have any questions or comments? Feel free to send us a message below. We will respond as soon as we can.
+</p>
+</div>
+<div class = "bus_field">
+  <%= render '/new_messages/contactform' %>
+</div>

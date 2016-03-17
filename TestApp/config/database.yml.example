@@ -1,0 +1,27 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: wedding_app
+  pool: 5
+  username: ahiltner
+  password:
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: wedding_app
+  pool: 5
+  username: ahiltner
+  password:
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: wedding_app
+  pool: 5
+  username: ahiltner
+  password:
+  port: 5432

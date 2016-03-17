@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<%= link_to "Bus", index_bus_path %><br>
+<%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
+<h1>Listing New Messages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>User email</th>
+      <th>User message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @new_messages.each do |new_message| %>
+      <tr>
+        <td><%= new_message.user_name %></td>
+        <td><%= new_message.user_email %></td>
+        <td><%= new_message.user_message %></td>
+        <td><%= link_to 'Show', new_message %></td>
+        <td><%= link_to 'Edit', edit_new_message_path(new_message) %></td>
+        <td><%= link_to 'Destroy', new_message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New New message', new_new_message_path %>

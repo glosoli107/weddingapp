@@ -1,0 +1,33 @@
+<%= link_to "Emails", index_email_path %><br>
+<%= link_to "Sign out", destroy_admin_session_path, :method => :delete %>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bus Requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Number of seats</th>
+      <th>Names</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bus_requests.each do |bus_request| %>
+      <tr>
+        <td><%= bus_request.number_of_seats %></td>
+        <td><%= bus_request.names %></td>
+        <td><%= bus_request.bus_email %></td>
+        <td><%= link_to 'Show', bus_request %></td>
+        <td><%= link_to 'Edit', edit_bus_request_path(bus_request) %></td>
+        <td><%= link_to 'Destroy', bus_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bus request', wedding_contact_path %>
